@@ -1,195 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Leon Volbers</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="libraries/p5.min.js"></script>
-    <script src="libraries/p5.sound.min.js"></script>
-    <script src="js/sketch.js"></script>
-    
-  </head>
+  <title>Leon Volbers</title>
 
-  <body>
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+  <script src="js/sketch.js"></script>
 
-    <div class="topnav" id="myTopnav">
-        <a href="../index.html" id="Title">LEON VOLBERS</a>
-        <a href="/projects/projects.html">PROJECTS</a>
-        <a href="/about.html">ABOUT</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
+</head>
 
-      <button onclick="filterCategory('category-3d')">3D</button>
-      <button onclick="filterCategory('category-ar')">AR</button>
-      <button onclick="filterCategory('category-game')">GAME</button>
-      <button onclick="filterCategory('category-interactive')">INTERACTIVE</button>
-      <button onclick="filterCategory('category-visuals')">VISUALS</button>
-      <button onclick="filterCategory('category-livecoding')">LIVECODING</button>
-      <button onclick="filterCategory('')">Show All</button>
-      
+<body>
 
-    <div class="flex-container">
-      <div class="item category-3d">
-        <h1>3D</h1>
+  <div class="topnav" id="myTopnav">
+    <a href="../index.html" id="Title">LEON VOLBERS</a>
+    <a href="/projects/projects.html">PROJECTS</a>
+    <a href="/about.html">ABOUT</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <button class="filter-button" onclick="filterCategory('category-3d')">3D</button>
+  <button class="filter-button" onclick="filterCategory('category-ar')">AR</button>
+  <button class="filter-button" onclick="filterCategory('category-game')">GAME</button>
+  <button class="filter-button" onclick="filterCategory('category-interactive')">INTERACTIVE</button>
+  <button class="filter-button" onclick="filterCategory('category-visuals')">VISUALS</button>
+  <button class="filter-button" onclick="filterCategory('category-livecoding')">LIVECODING</button>
+  <button class="filter-button" onclick="filterCategory('')">Show All</button>
+
+
+  <div class="flex-container">
+    <div class="item category-3d">
+      <h1>3D</h1>
 
       <div class="flex-item-left">
         <a href="/projects/transmorphosis/transmorphosis.html">
-            <div class="overlay-text">transmorphosis</div>
-            <img class="thumbnail" src="/projects/img/11_trans_morphosis_s.jpg">
-           
+          <div class="overlay-text">transmorphosis</div>
+          <img class="thumbnail" src="/projects/img/11_trans_morphosis_s.jpg">
+
         </a>
+      </div>
+
+
+      <div class="flex-item-left">
+        <a href="/projects/N_FXTURE/N_FXTURE.html">
+          <div class="overlay-text">N/FXTURE</div>
+          <img class="thumbnail" src="/projects/img/12_nxfture_s.jpg">
+
+        </a>
+      </div>
+
+
+    </div>
+
+
+
+
+    <div class="item category-ar">
+      <h1>AR</h1>
+      <div class="flex-item-left">
+        <a href="/projects/[part]/part.html">
+          <div class="overlay-text">[PART]</div>
+          <img class="thumbnail" src="/projects/img/10_part_s.jpg">
+
+        </a>
+      </div>
+
+    </div>
+
+
+    <div class="item category-game">
+      <h1>GAME</h1>
+
+
+      <div class="flex-item-left">
+        <div class="overlay-text">Marissa</div>
+        <a href="/projects/mh/mh_marissa.html"><img class="thumbnail" src=""></a>
+      </div>
+
+      <div class="flex-item-left">
+        <div class="overlay-text">Honka</div>
+        <a href="/projects/mh/mh_honka.html"><img class="thumbnail" src=""></a>
+      </div>
+
+
+      <div class="flex-item-left">
+        <div class="overlay-text">Honka</div>
+        <a href="/projects/mh/mh_honka.html"><img class="thumbnail" src="""></a>
+          </div>
+  
+
+          <div class=" flex-item-left">
+          <div class="overlay-text">Waldmensch</div>
+          <a href="/projects/mh/mh_bann.html"><img class="thumbnail" src=""></a>
+      </div>
+
+
+    <div class="flex-item-left">
+      <div class="overlay-text">shift space</div>
+      <a href="/projects/shift_space/shift_space.html"><img class="thumbnail" src="/projects/img/4_shift_s.jpg"></a>
+    </div>
+
+  </div>
+
+
+  <div class="item category-interactive">
+    <h1>INTERACTIVE</h1>
+
+    <div class="flex-item-left">
+      <a href="/projects/sensus_autem_machina/sensus.html">
+        <div class="overlay-text">sensus autem machina</div>
+        <img class="thumbnail" src="/projects/img/7_sensus_s.jpg">
+
+      </a>
     </div>
 
 
     <div class="flex-item-left">
-      <a href="/projects/N_FXTURE/N_FXTURE.html">
-          <div class="overlay-text">N/FXTURE</div>
-          <img class="thumbnail" src="/projects/img/12_nxfture_s.jpg">
-         
+      <a href="/projects/Color_City/color_city.html">
+        <div class="overlay-text">The Color of the City</div>
+        <img class="thumbnail" src="/projects/img/8_color_city_s.jpg">
+
       </a>
-  </div>
-
-
-  </div>
-
-
-
-
-        <div class="item category-ar">
-          <h1>AR</h1>
-          <div class="flex-item-left">
-            <a href="/projects/[part]/part.html">
-                <div class="overlay-text">[PART]</div>
-                <img class="thumbnail" src="/projects/img/10_part_s.jpg">
-               
-            </a>
-        </div>
-
-        </div>
-
-
-        <div class="item category-game">
-          <h1>GAME</h1>
-        <div class="flex-item-left">
-          <div class="overlay-text">shift space</div>
-            <a href="/projects/shift_space/shift_space.html"><img class="thumbnail" src="/projects/img/4_shift_s.jpg"></a>
-        </div>
-
-        </div>
-
-        <div class="item category-interactive">
-          <h1>INTERACTIVE</h1>
-
-          <div class="flex-item-left">
-            <a href="/projects/sensus_autem_machina/sensus.html">
-                <div class="overlay-text">sensus autem machina</div>
-                <img class="thumbnail" src="/projects/img/7_sensus_s.jpg">
-               
-            </a>
-        </div>
-
-
-        <div class="flex-item-left">
-          <a href="/projects/Color_City/color_city.html">
-              <div class="overlay-text">The Color of the City</div>
-              <img class="thumbnail" src="/projects/img/8_color_city_s.jpg">
-             
-          </a>
-      </div>
-
-
-      <div class="flex-item-left">
-        <a href="/projects/int_portfolio/int_portfolio.html">
-            <div class="overlay-text">Interactive Portfolio</div>
-            <img class="thumbnail" src="/projects/img/9_int_portfolio_s.jpg">
-           
-        </a>
     </div>
 
 
-      <div class="flex-item-left">
-        <div class="overlay-text">01101000EIS01110011</div>
-          <a href="/projects/gloomy_prospects/gloomy_prospects.html"><img class="thumbnail" src="/projects/img/3_gloomy_s.jpg">
-      </div>
+    <div class="flex-item-left">
+      <a href="/projects/int_portfolio/int_portfolio.html">
+        <div class="overlay-text">Interactive Portfolio</div>
+        <img class="thumbnail" src="/projects/img/9_int_portfolio_s.jpg">
+
+      </a>
+    </div>
 
 
-      <div class="flex-item-left">
-        <div class="overlay-text">did they meet</div>
-          <a href="/projects/Poetic_interfaces/poetic_interfaces.html"><img class="thumbnail" src="/projects/img/2_poetic_s.jpg"></a>
-      </div>
+    <div class="flex-item-left">
+      <div class="overlay-text">01101000EIS01110011</div>
+      <a href="/projects/gloomy_prospects/gloomy_prospects.html"><img class="thumbnail"
+          src="/projects/img/3_gloomy_s.jpg">
+    </div>
 
+
+    <div class="flex-item-left">
+      <div class="overlay-text">did they meet</div>
+      <a href="/projects/Poetic_interfaces/poetic_interfaces.html"><img class="thumbnail"
+          src="/projects/img/2_poetic_s.jpg"></a>
+    </div>
+
+
+  </div>
+
+  <div class="item category-visuals">
+    <h1>VISUALS</h1>
+    <div class="flex-item-left">
+      <a href="/projects/10XCC/10xcc.html">
+        <div class="overlay-text">10XCC</div>
+        <img class="thumbnail" src="">
+
+      </a>
+    </div>
+    <div class="flex-item-left">
+      <a href="/projects/Trancent/trancent.html">
+        <div class="overlay-text">Premis - Trancent</div>
+        <img class="thumbnail" src="/projects/img/13_transent_s.jpg">
+
+      </a>
+    </div>
+
+    <div class="flex-item-left">
+      <div class="overlay-text">bursting glas</div>
+      <a href="/projects/bursting_glas/bursting_glass.html"><img class="thumbnail"
+          src="/projects/img/5_bursting_s.jpg"></a>
 
     </div>
 
-        <div class="item category-visuals">
-          <h1>VISUALS</h1>
-          <div class="flex-item-left">
-            <a href="/projects/Trancent/trancent.html">
-                <div class="overlay-text">Premis - Trancent</div>
-                <img class="thumbnail" src="/projects/img/13_transent_s.jpg">
-               
-            </a>
-        </div>
-
-        <div class="flex-item-left">
-          <div class="overlay-text">bursting glas</div>
-            <a href="/projects/bursting_glas/bursting_glass.html"><img class="thumbnail" src="/projects/img/5_bursting_s.jpg"></a>
-            
-        </div>
 
 
 
 
+  </div>
 
-        </div>
-
-        <div class="item category-livecoding">
-          <h1>LIVECODING</h1>
-          <div class="flex-item-left">
-            <a href="/projects/levoxtrip/levoxtrip.html">
-                <div class="overlay-text">LXT</div>
-                <img class="thumbnail" src="/projects/img/1_LXT_s.jpg">
-               
-            </a>
-        </div>
-
-        </div>
-
-      </div>
+  <div class="item category-livecoding">
+    <h1>LIVECODING</h1>
 
 
+    <div class="flex-item-left">
+
+      <a href="/projects/levoxtrip/iclc24.html">
+        <div class="overlay-text">ICLC24</div>
+        <img class="thumbnail" src="">
+
+      </a>
+    </div>
+
+    <div class="flex-item-left">
+
+      <a href="/projects/levoxtrip/viu24.html">
+        <div class="overlay-text">VIU24</div>
+        <img class="thumbnail" src="">
+
+      </a>
+    </div>
+
+    <div class="flex-item-left">
+      <a href="/projects/levoxtrip/pattern_salon.html">
+        <div class="overlay-text">PatternSalon24</div>
+        <img class="thumbnail" src="">
+
+      </a>
+    </div>
+
+    <div class="flex-item-left">
+
+      <a href="/projects/levoxtrip/viu24.html">
+        <div class="overlay-text">TopLapStreams</div>
+        <img class="thumbnail" src="">
+
+      </a>
+    </div>
 
 
 
-    <div class="footer">
-        <p>Leon Volbers  © 2024</p>
-        <a class="impressumLink" href="../impressum.html">Impressum</a>
-      </div>
+<div class="flex-item-left">
 
-    </body>
-      <script>
+      <a href="/projects/levoxtrip/viu24.html">
+        <div class="overlay-text">Pattern</div>
+        <img class="thumbnail" src="">
 
-function filterCategory(category) {
-  const items = document.querySelectorAll('.item');
-  items.forEach(item => {
-    if (category === '' || item.classList.contains(category)) {
-      item.classList.remove('hidden');
-    } else {
-      item.classList.add('hidden');
-    }
-  });
-}
+      </a>
+    </div>
 
-      </script>
 
-      <script src="/js/navbar.js"></script>
-    
+    <div class="flex-item-left">
+      <a href="/projects/levoxtrip/levoxtrip.html">
+        <div class="overlay-text">LXT</div>
+        <img class="thumbnail" src="/projects/img/1_LXT_s.jpg">
+
+      </a>
+    </div>
+
+  </div>
+
+  </div>
+
+
+
+
+
+  <div class="footer">
+    <p>Leon Volbers © 2024</p>
+    <a class="impressumLink" href="../impressum.html">Impressum</a>
+  </div>
+
+</body>
+<script>
+
+  function filterCategory(category) {
+    const items = document.querySelectorAll('.item');
+    items.forEach(item => {
+      if (category === '' || item.classList.contains(category)) {
+        item.classList.remove('hidden');
+      } else {
+        item.classList.add('hidden');
+      }
+    });
+  }
+
+</script>
+
+<script src="/js/navbar.js"></script>
+
 
 </html>

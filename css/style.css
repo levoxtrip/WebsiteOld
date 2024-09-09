@@ -14,6 +14,24 @@ body {
   overflow-x: hidden;
   color:black;
 }
+/* BUTTON */
+.filter-button {
+  padding: 15px 25px; /* Adjust padding to make the button larger */
+  font-size: 16px; /* Adjust font size */
+
+
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.filter-button:hover {
+  background-color: rgb(116, 248,120);
+}
+
+.filter-button:active {
+  transform: scale(0.95); /* Slightly shrink button on click */
+  background-color: rgb(116, 248,120);
+}
 
 
 

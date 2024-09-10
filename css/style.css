@@ -18,8 +18,7 @@ body {
 .filter-button {
   padding: 15px 25px; /* Adjust padding to make the button larger */
   font-size: 16px; /* Adjust font size */
-
-
+  margin: 5px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
 }
@@ -91,6 +90,7 @@ h1,h2{
 
 .hidden {
   opacity: 0;
+  display: none;
   transform: scale(0.9);
 }
 
@@ -402,6 +402,27 @@ height: 100%;
     text-align: left;
   }
 
+  .filter-button {
+    padding: 15px 25px; /* Adjust padding to make the button larger */
+    margin: 5px;
+    font-size: 16px; /* Adjust font size */
+    background-color: rgb(245, 245, 245);
+  color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .filter-button:hover {
+    background-color: rgb(116, 248,120);
+  }
+  
+  .filter-button:active {
+    transform: scale(0.95); /* Slightly shrink button on click */
+    background-color: rgb(116, 248,120);
+
+
+}
+
  
 
 }
@@ -410,6 +431,8 @@ height: 100%;
   .flex-item-right, .flex-item-left {
     flex: 100%;
   }
+
+
 
   .overlay-text {
     color: white;
@@ -424,7 +447,6 @@ height: 100%;
   }
 
 
-}
 
 
 
@@ -455,6 +477,8 @@ height: 100%;
 }
 
 @media only screen and (min-width: 800px) {
+
+
 
   .projectText{
     width:50%;

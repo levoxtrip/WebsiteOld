@@ -264,17 +264,17 @@
 </body>
 <script>
 
-  function filterCategory(category) {
-    const items = document.querySelectorAll('.item');
-    items.forEach(item => {
-      if (category === '' || item.classList.contains(category)) {
-        item.classList.remove('hidden');
-      } else {
-        item.classList.add('hidden');
-      }
-    });
-  }
-
+function filterCategory(category) {
+  const items = document.querySelectorAll('.item');
+  
+  items.forEach(item => {
+    if (category === '' || item.classList.contains(category)) {
+      item.style.display = 'block';  // Show the item
+    } else {
+      item.style.display = 'none';  // Completely hide the item and remove space
+    }
+  });
+}
 </script>
 
 <script src="/js/navbar.js"></script>

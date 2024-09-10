@@ -132,5 +132,23 @@
 <script src="./js/slider.js"></script>
 <script src="./js/welcomeAnimation.js"></script>
 
+<script>
+  window.addEventListener('load', function() {
+      setTimeout(function() {
+        const intro = document.querySelector('.intro');
+        if (intro) {
+          intro.classList.add('fade-out');
+        }
+      }, 8000); 
+    });
+
+    document.querySelector('.slider-container').addEventListener('click', function() {
+      const intro = document.querySelector('.intro');
+      if (intro) {
+        intro.classList.add('fade-out');
+      }
+    });
+</script>
+
   </body>
 </html>

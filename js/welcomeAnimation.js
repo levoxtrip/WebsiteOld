@@ -4,3 +4,5 @@ document.addEventListener("DOMContentLoaded", () => {
         line.style.setProperty('--delay', `${index * 1}s`);
     });
 });
+
+

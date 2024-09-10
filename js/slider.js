@@ -4,6 +4,7 @@ showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
+  fadeOutIntro()
   showSlides(slideIndex += n);
 }
 
@@ -26,5 +27,11 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+}
+
+
+function fadeOutIntro() {
+  const intro = document.querySelector('.intro');
+  intro.classList.add('fade-out');
 }
 

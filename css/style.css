@@ -102,7 +102,7 @@ h1,h2{
 }
 
 .item {
-  flex: 1 1 200px; /* Adjust flex properties as needed */
+  flex: 1 1 200px; /* Ayjust flex properties as needed */
   padding: 10px;
   border: none;
   transition: opacity 0.3s, transform 0.3s;
@@ -155,6 +155,8 @@ h1,h2{
   font-size: 3vh;
     font-weight: bold;
     font-style:italic;
+    opacity: 1;
+  transition: opacity 2s ease-out;
 }
 
 .fade-in-text {
@@ -163,9 +165,21 @@ h1,h2{
   animation-delay: var(--delay);
 }
 
+.fade-out {
+  opacity: 0;
+  visibility: hidden; /* Ensure the element is hidden */
+
+}
+
 @keyframes fadeIn {
   to {
       opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+      opacity: 0;
   }
 }
 

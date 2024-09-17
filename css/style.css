@@ -131,7 +131,7 @@ h1,h2{
   overflow: hidden;
   }
 
-  /*
+
   .thumbnailText{
     font-size: 64px;
     margin-left:14px;
@@ -200,9 +200,9 @@ h1,h2{
   
 
   .overlay-text {
-    color: rgb(116, 248,120);
+    color: white;
     background-color: black;
-    font-size: 3vh;
+    font-size: 4vh;
     font-weight: bold;
     font-style:italic;
     position: absolute;

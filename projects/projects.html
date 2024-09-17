@@ -20,15 +20,7 @@
 
 <body>
 
-  <div class="topnav" id="myTopnav">
-    <a href="../index.html" id="Title">LEON VOLBERS</a>
-    <a href="/projects/projects.html">PROJECTS</a>
-    <a href="/projects/inspiration.html">INSPIRATION</a>
-    <a href="/about.html">ABOUT</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
+  <div id="navbar"></div>
 
   <button class="filter-button" onclick="filterCategory('category-3d')">3D</button>
   <button class="filter-button" onclick="filterCategory('category-ar')">AR</button>
@@ -82,7 +74,7 @@
     <div class="item category-game">
       <h1>GAME</h1>
 
-
+<!--
       <div class="flex-item-left">
         <div class="overlay-text">Marissa</div>
         <a href="/projects/mh/mh_marissa.html"><img class="thumbnail" src=""></a>
@@ -105,11 +97,12 @@
           <a href="/projects/mh/mh_bann.html"><img class="thumbnail" src=""></a>
       </div>
 
-
+-->
     <div class="flex-item-left">
       <div class="overlay-text">shift space</div>
       <a href="/projects/shift_space/shift_space.html"><img class="thumbnail" src="/projects/img/4_shift_s.jpg"></a>
     </div>
+    
 
   </div>
 
@@ -165,7 +158,7 @@
     <div class="flex-item-left">
       <a href="/projects/10XCC/10xcc.html">
         <div class="overlay-text">10XCC</div>
-        <img class="thumbnail" src="">
+        <img class="thumbnail" src="/projects/img/10xcc.jpeg">
 
       </a>
     </div>
@@ -211,7 +204,7 @@
 
       </a>
     </div>
-
+  <!--
     <div class="flex-item-left">
 
       <a href="/projects/levoxtrip/viu24.html">
@@ -229,27 +222,38 @@
       </a>
     </div>
 
-    <div class="flex-item-left">
-
-      <a href="/projects/levoxtrip/viu24.html">
-        <div class="overlay-text">TopLapStreams</div>
-        <img class="thumbnail" src="">
-
-      </a>
-    </div>
+    
 
 
 
 <div class="flex-item-left">
 
       <a href="/projects/levoxtrip/viu24.html">
-        <div class="overlay-text">Pattern</div>
+        <div class="overlay-text">VIU24</div>
         <img class="thumbnail" src="">
 
       </a>
     </div>
 
+  -->
 
+  <div class="flex-item-left">
+
+    <a href="/projects/levoxtrip/inferno.html">
+      <div class="overlay-text">Inf[ern]o</div>
+      <img class="thumbnail" src="/projects/img/inferno.jpeg">
+
+    </a>
+  </div>
+
+  <div class="flex-item-left">
+
+    <a href="/projects/levoxtrip/topLapStreams.html">
+      <div class="overlay-text">TopLapStreams</div>
+      <img class="thumbnail" src="/projects/img/tlstreams.jpeg">
+
+    </a>
+  </div>
     <div class="flex-item-left">
       <a href="/projects/levoxtrip/levoxtrip.html">
         <div class="overlay-text">LXT</div>
@@ -286,7 +290,7 @@ function filterCategory(category) {
   });
 }
 </script>
-
+<script src="/js/loadNavbar.js"></script>
 <script src="/js/navbar.js"></script>
 
 

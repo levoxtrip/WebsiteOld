@@ -129,7 +129,7 @@ h1,h2{
 .HeroImg{
   width:100%;
   overflow: hidden;
-  }
+}
 
 
   .thumbnailText{
@@ -230,8 +230,6 @@ h1,h2{
 .thumbnail{
   width: 100%;
   height:auto;
-
- 
 }
 
 
@@ -391,11 +389,6 @@ width: 80%;
 height: 543px;
 }
 
-.videoYoutube{
-  
-    
-  
-  }
 
 
 
@@ -465,6 +458,8 @@ height: 543px;
     top: 20%; /* Adjust this to position the text vertically */
   left: 15%; 
   }
+
+}
 
 
 

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        #content { max-width: 800px; margin: 20px auto; }
+        .post-link { cursor: pointer; color: blue; text-decoration: underline; }
+        .post-link:hover { color: darkblue; }
+    </style>
+</head>
+<body>
+    <h1>My Blog</h1>
+    <ul id="post-list"></ul>
+    <div id="content"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        // Fetch the list of markdown files from the server
+        async function fetchPosts() {
+            const response = await fetch('../list-posts.php'); // Fetch the PHP script
+            const posts = await response.json(); // Get the JSON list of files
+
+            const postList = document.getElementById('post-list');
+            postList.innerHTML = ''; // Clear the list
+
+            posts.forEach(post => {
+                const listItem = document.createElement('li');
+                const link = document.createElement('a');
+                link.classList.add('post-link');
+                link.innerText = post.replace('.md', ''); // Display title without .md
+                link.onclick = () => loadMarkdown(`blog/files/${post}`); // Load the markdown from the correct path
+                listItem.appendChild(link);
+                postList.appendChild(listItem);
+            });
+        }
+
+        // Load a specific markdown file and display its content
+        async function loadMarkdown(file) {
+            const response = await fetch(file);
+            const markdown = await response.text();
+            document.getElementById('content').innerHTML = marked(markdown); // Parse and display markdown
+        }
+
+        // Load posts on page load
+        fetchPosts();
+    </script>
+</body>
+</html>

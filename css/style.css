@@ -47,6 +47,7 @@ h1,h2{
 
 /*navbar*/
 
+
 .topnav {
   overflow: hidden;
   
@@ -140,11 +141,11 @@ h1,h2{
     font-style:italic;
     
   }
-*/
+
 /* INTRO !!! */
 .intro {
   position: absolute;
-  top: 40%; /* Adjust this to position the text vertically */
+  top: 20%; /* Adjust this to position the text vertically */
   left: 10%; /* Adjust this to position the text horizontally */
   text-align: left; /* Align the text as needed */
   z-index: 100; /* Ensures the text is above other content */
@@ -452,12 +453,7 @@ height: 543px;
     font-size: 7vh;
   }
 
-  .intro {
-    width: 60%;
-    font-size: 2vh;
-    top: 20%; /* Adjust this to position the text vertically */
-  left: 15%; 
-  }
+
 
 }
 
@@ -482,7 +478,12 @@ height: 543px;
     overflow: hidden;
   }  
 
-
+  .intro {
+    
+    font-size: 2vh;
+    top: 20%; /* Adjust this to position the text vertically */
+  left: 15%; 
+  }
 
 
 }

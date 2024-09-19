@@ -216,8 +216,6 @@ h1,h2{
   }
 
 
-
-
 .projectImg{
   width:100%;
 }
@@ -381,16 +379,24 @@ h1,h2{
 }
 
 
-.videoYoutube{
-  
-position: relative;
-top: 0;
-left: 10%;
-width: 80%;
-height: 543px;
+.videoYoutube {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  margin: 0 auto;
+
+
 }
 
-
+.videoYoutube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+}
 
 
 @media screen and (max-width: 600px) {
@@ -408,6 +414,7 @@ height: 543px;
     right: 0;
     top: 0;
   }
+
 
 
   .topnav.responsive a {
@@ -433,27 +440,32 @@ height: 543px;
   .filter-button:active {
     transform: scale(0.95); /* Slightly shrink button on click */
     background-color: rgb(116, 248,120);
-
-
-}
-
- 
+  }
 
 }
+
+
+@media (max-width: 600px) {
+  .videoYoutube {
+    padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
+  }
+}
+
+
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 @media (max-width: 800px) {
   .flex-item-right, .flex-item-left {
     flex: 100%;
   }
 
-
+  .videoYoutube {
+    padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
+  }
 
   .overlay-text {
     color: white;
     font-size: 7vh;
   }
-
-
 
 }
 
@@ -470,8 +482,6 @@ height: 543px;
   .topnav a {
     float:right;
   }
-
-
 
   .projectImgCenter{
     width: 70%;
@@ -491,7 +501,6 @@ height: 543px;
 @media only screen and (min-width: 800px) {
 
 
-
   .projectText{
     width:50%;
     margin-left: 30vw;
@@ -504,4 +513,13 @@ height: 543px;
 
   
 
+}
+
+/* Media query for large screens */
+@media (min-width: 1200px) { /* Adjust the min-width as needed */
+  .videoYoutube {
+    width: 70%; /* Or 50% depending on your preference */
+
+    padding-top: 34.375%; /* Adjust to maintain aspect ratio for 60% width */
+  }
 }

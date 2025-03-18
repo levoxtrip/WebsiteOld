@@ -6,7 +6,7 @@
 
 
 body {
-  background-color: rgb(116, 248,120);
+  background-color: rgb(237, 237, 237);
   font-family: 'Roboto Condensed', sans-serif;
   padding: 20px; /* Abstand des Inhalts zum Rand*/
   animation-name: bodyColor;
